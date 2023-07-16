@@ -2,8 +2,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import CartItem from './cartItem';
 import { openModal } from '../features/Modal/ModalSlice';
 
-
-/* eslint-disable no-unused-vars */
 const CartContainer = () => {
     const dispatch = useDispatch();
     const { cartItems, total, amount } = useSelector((store) => store.cart);
